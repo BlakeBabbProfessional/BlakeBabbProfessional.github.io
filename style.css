@@ -3,27 +3,38 @@ body {
     font-family: sans-serif;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
+img {
+    border-radius: 10px;
+    box-shadow: 5px 5px lightgrey;
+}
+
 .wrapper {
+    /*background-color: red;*/
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .outer_box {
-    background-color: white;
-    width: 800px;
+    /*background-color: blue;*/
+    display: flex;
+    flex-direction: row;
     height: fit-content;
-    border-radius: 10px;
-    margin: 20px;
+    justify-content: space-evenly;
 }
 
 .inner_box {
+    background-color: white;
+    border-radius: 10px;
     width: 750px;
     height: fit-content;
     padding: 10px 20px;
+    align-self: center;
+    box-shadow: 5px 5px lightgrey;
 }
 
 @media (max-width: 840px) {
