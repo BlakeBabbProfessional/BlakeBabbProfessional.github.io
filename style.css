@@ -1,0 +1,31 @@
+body {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.outer_box {
+    background-color: white;
+    width: 800px;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.inner_box {
+    width: 750px;
+    height: fit-content;
+    padding: 10px 20px;
+}
+
+@media (max-width: 840px) {
+    .outer_box, .inner_box { width: auto; }
+}
