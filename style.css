@@ -1,5 +1,18 @@
+:root {
+    --color-text: black; /* black */
+    --color-bg: ghostwhite; /* ghostwhite */
+    --color-section: whitesmoke; /* whitesmoke */
+    --color-section-shadow: #e6e6e6; /* #e6e6e6 */
+    --color-subsection: white; /* white */
+    --color-subsection-shadow: lightgrey; /* lightgrey */
+    --color-button-darkshadow: silver; /* silver */
+    --color-highlight: #c1e5f6;
+    --color-highlight-shadow: skyblue;
+}
+
 body {
-    background-color: whitesmoke;
+    color: var(--color-text);
+    background-color: var(--color-bg);
     font-family: sans-serif;
 }
 
@@ -11,12 +24,17 @@ h1, h2 {
 
 img {
     border-radius: 10px;
-    box-shadow: 5px 5px lightgrey;
+    box-shadow: 0px 3px var(--color-subsection-shadow);
 }
 
 a {
-    color: black;
+    color: var(--color-text);
     text-decoration: none;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
 }
 
 .wrapper {
@@ -27,10 +45,10 @@ a {
 }
 
 .header {
-    background-color: white;
+    background-color: var(--color-section);
     width: 100%;
     height: fit-content;
-    box-shadow: 5px 5px lightgrey;
+    box-shadow: 5px 5px var(--color-section-shadow);
     border-radius: 10px;
     margin: 0px 0px 20px 0px;
 }
@@ -44,16 +62,24 @@ a {
 }
 
 .button {
-    background-color: whitesmoke;
+    background-color: var(--color-subsection);
     border-radius: 5px;
-    box-shadow: 3px 3px lightgrey;
+    box-shadow: 3px 3px var(--color-subsection-shadow);
+    margin: 5px;
+    padding: 5px;
+}
+
+.button-sel {
+    background-color: var(--color-section-shadow);
+    border-radius: 5px;
+    box-shadow: 2px 2px var(--color-button-darkshadow);
     margin: 5px;
     padding: 5px;
 }
 
 .button:hover {
-    background-color: aliceblue;
-    box-shadow: 4px 4px skyblue;
+    background-color: var(--color-highlight);
+    box-shadow: 4px 4px var(--color-highlight-shadow);
 }
 
 .outer_box {
@@ -62,16 +88,40 @@ a {
     flex-direction: row;
     height: fit-content;
     justify-content: space-evenly;
+    margin: 20px;
+}
+
+.section_box {
+    background-color: var(--color-section);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 0px;
+    box-shadow: 5px 5px var(--color-section-shadow);
 }
 
 .inner_box {
-    background-color: white;
+    background-color: var(--color-subsection);
     border-radius: 10px;
-    width: 750px;
+    /*width: 600px;*/
     height: fit-content;
     padding: 10px 20px;
+    margin: 10px;
     align-self: center;
-    box-shadow: 5px 5px lightgrey;
+    box-shadow: 5px 5px var(--color-subsection-shadow);
+}
+
+.image_box{
+    background-color: var(--color-subsection);
+    border-radius: 10px;
+    height: fit-content;
+    padding: 5px;
+    align-self: center;
+    box-shadow: 5px 5px var(--color-subsection-shadow);
+    margin: 10px;
 }
 
 @media (max-width: 840px) {
