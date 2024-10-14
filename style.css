@@ -22,9 +22,19 @@ h1, h2 {
     margin: 10px;
 }
 
+h3 {
+    text-align: center;
+    font-style: italic;
+    font-size: 12pt;
+    margin: 5px;
+}
+
 img {
     border-radius: 10px;
-    box-shadow: 0px 3px var(--color-subsection-shadow);
+    box-shadow: 3px 3px var(--color-subsection-shadow);
+    max-width: 600px;
+    max-height: 400px;
+    margin: 5px;
 }
 
 a {
@@ -77,9 +87,31 @@ a {
     padding: 5px;
 }
 
-.button:hover {
+.ext-button {
+    background-color: var(--color-section);
+    border-radius: 5px;
+    box-shadow: 3px 3px var(--color-section-shadow);
+    width: fit-content;
+    margin: 5px;
+    padding: 5px;
+    justify-self: center;
+}
+
+.button:hover, .ext-button:hover {
     background-color: var(--color-highlight);
     box-shadow: 4px 4px var(--color-highlight-shadow);
+}
+
+.section_box {
+    background-color: var(--color-section);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 0px;
+    box-shadow: 5px 5px var(--color-section-shadow);
 }
 
 .outer_box {
@@ -91,22 +123,10 @@ a {
     margin: 20px;
 }
 
-.section_box {
-    background-color: var(--color-section);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    height: fit-content;
-    justify-content: space-evenly;
-    margin: 10px;
-    padding: 0px;
-    box-shadow: 5px 5px var(--color-section-shadow);
-}
-
 .inner_box {
     background-color: var(--color-subsection);
     border-radius: 10px;
-    /*width: 600px;*/
+    max-width: 600px;
     height: fit-content;
     padding: 10px 20px;
     margin: 10px;
@@ -114,7 +134,9 @@ a {
     box-shadow: 5px 5px var(--color-subsection-shadow);
 }
 
-.image_box{
+.image_box {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-subsection);
     border-radius: 10px;
     height: fit-content;
@@ -124,6 +146,9 @@ a {
     margin: 10px;
 }
 
-@media (max-width: 840px) {
-    .outer_box, .inner_box { width: auto; }
+@media screen and (max-width: 840px) {
+    .outer_box, .inner_box {
+        width: auto;
+        flex-direction: column;
+    }
 }
