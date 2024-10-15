@@ -30,11 +30,14 @@ h3 {
 }
 
 img {
+    display: flex;
     border-radius: 10px;
     box-shadow: 3px 3px var(--color-subsection-shadow);
-    max-width: 600px;
+    max-width: min(100%, 600px);
     max-height: 400px;
     margin: 5px;
+    align-self: center;
+    flex: 0, 2;
 }
 
 a {
@@ -71,30 +74,23 @@ a {
     margin: 10px;
 }
 
-.button {
+.button, .button-sel, .ext-button {
     background-color: var(--color-subsection);
     border-radius: 5px;
     box-shadow: 3px 3px var(--color-subsection-shadow);
     margin: 5px;
     padding: 5px;
+    justify-self: center;
 }
 
 .button-sel {
     background-color: var(--color-section-shadow);
-    border-radius: 5px;
     box-shadow: 2px 2px var(--color-button-darkshadow);
-    margin: 5px;
-    padding: 5px;
 }
 
 .ext-button {
     background-color: var(--color-section);
-    border-radius: 5px;
     box-shadow: 3px 3px var(--color-section-shadow);
-    width: fit-content;
-    margin: 5px;
-    padding: 5px;
-    justify-self: center;
 }
 
 .button:hover, .ext-button:hover {
@@ -114,13 +110,17 @@ a {
     box-shadow: 5px 5px var(--color-section-shadow);
 }
 
-.outer_box {
+.outer_box, .outer_box_rev {
     /*background-color: blue;*/
     display: flex;
     flex-direction: row;
     height: fit-content;
     justify-content: space-evenly;
     margin: 20px;
+}
+
+.outer_box_rev {
+    flex-direction: row-reverse;
 }
 
 .inner_box {
@@ -146,8 +146,8 @@ a {
     margin: 10px;
 }
 
-@media screen and (max-width: 840px) {
-    .outer_box, .inner_box {
+@media screen and (max-width: 1000px) {
+    .outer_box, .inner_box, .outer_box_rev {
         width: auto;
         flex-direction: column;
     }
