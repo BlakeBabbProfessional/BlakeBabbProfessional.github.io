@@ -40,21 +40,64 @@
     <div class="section_box">
     <div class="outer_box">
     <div class="image_box">
-        <img src="project.jpg" width=400px>
-        <p class="caption">My senior capstone project presentation</p>
+        <img src="project.jpg">
+        <p class="caption">My senior capstone project presentation at the
+            engineering expo</p>
     </div>
     <div class="inner_box">
         <h2>Senior Capstone Project<br>
             <em>"P-DAQ"</em></h2>
+        <div class="buttons">
+        <div class="ext-button">
+            <a target="_blank" href="https://github.com/orgs/Personal-Data-Acquisition/repositories">
+                View on GitHub
+            </a>
+        </div>
+        </div>
         <p>
-            For my 2024 senior capstone project I worked with a team of 3
-            of my classmates and an industry professional project partner
+            For my 2024 senior capstone project I worked as part of a team
             on a project we called the "personal data acquisition prototype",
-            or "P-DAQ". It was a prototype data logger of the likes found in
+            or "P-DAQ". The team consisted of myself, my classmates Aidan Agee,
+            Jake Goodwin, and Patrick Iacob, along with an industry professional
+            project partner Chris Patton.
+            Our project was a prototype data logger of the likes found in
             the aerospace and automotive industries, but designed for the
             budget and use cases of amatuer hobbyists.
             <br><br>
+            The project was developed from start to finished in Rust over nine
+            months with the direction of our project partner Chris Patton and
+            the oversight of a teacher's assistant. After completion, me and my
+            teammates presented our project at a public expo for college of
+            engineering captone projects.
+            <br><br>
             TODO: describe device, devoleopment process, my role, with images
+        </p>
+    </div>
+    </div>
+    <div class="outer_box_rev">
+    <div class="image_box">
+        <img src="ui1.png">
+        <p class="caption">Top of the user interface home page showing graphs
+        of acceleration and temperature over time.</p>
+    </div>
+    <div class="inner_box">
+        <h2>User Interface</h2>
+        <div class="buttons">
+        <div class="ext-button">
+            <a target="_blank" href="https://github.com/Personal-Data-Acquisition/PDA_UI">
+                View on GitHub
+            </a>
+        </div>
+        </div>
+        <p>
+            We split our team into two subteams based on expertise to focus on
+            different aspects of the project: a hardware and firmware subteam,
+            and a software subteam. Myself and Aidan Agee were on the software
+            subteam, and we focused on the user interface and data storage.
+            <br><br>
+            The user interface was designed with the eGui Rust framework, and
+            hosted as a Rust Rocket webserver from the Raspberry PI, which could
+            then be connected to over WiFi by a user's personal device.
         </p>
     </div>
     </div>
