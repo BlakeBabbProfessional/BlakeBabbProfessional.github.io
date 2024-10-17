@@ -1,11 +1,11 @@
 :root {
-    --color-text: black; /* black */
-    --color-bg: ghostwhite; /* ghostwhite */
-    --color-section: whitesmoke; /* whitesmoke */
-    --color-section-shadow: #e6e6e6; /* #e6e6e6 */
-    --color-subsection: white; /* white */
-    --color-subsection-shadow: lightgrey; /* lightgrey */
-    --color-button-darkshadow: silver; /* silver */
+    --color-text: black;
+    --color-bg: ghostwhite;
+    --color-section: whitesmoke;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-subsection: white;
+    --color-subsection-shadow: lightgrey;
+    --color-button-darkshadow: silver;
     --color-highlight: #c1e5f6;
     --color-highlight-shadow: skyblue;
 }
@@ -32,7 +32,7 @@ h3 {
 img {
     display: flex;
     border-radius: 10px;
-    box-shadow: 3px 3px var(--color-subsection-shadow);
+    box-shadow: 3px 3px var(--color-shadow);
     max-width: min(100%, 600px);
     max-height: 400px;
     margin: 5px;
@@ -58,10 +58,12 @@ a {
 }
 
 .header {
+    position: sticky;
+    top: 0;
     background-color: var(--color-section);
     width: 100%;
     height: fit-content;
-    box-shadow: 5px 5px var(--color-section-shadow);
+    box-shadow: 5px 5px var(--color-shadow);
     border-radius: 10px;
     margin: 0px 0px 20px 0px;
 }
@@ -77,20 +79,20 @@ a {
 .button, .button-sel, .ext-button {
     background-color: var(--color-subsection);
     border-radius: 5px;
-    box-shadow: 3px 3px var(--color-subsection-shadow);
+    box-shadow: 3px 3px var(--color-shadow);
     margin: 5px;
     padding: 5px;
     justify-self: center;
 }
 
 .button-sel {
-    background-color: var(--color-section-shadow);
+    background-color: var(--color-shadow);
     box-shadow: 2px 2px var(--color-button-darkshadow);
 }
 
 .ext-button {
     background-color: var(--color-section);
-    box-shadow: 3px 3px var(--color-section-shadow);
+    box-shadow: 3px 3px var(--color-shadow);
 }
 
 .button:hover, .ext-button:hover {
@@ -107,7 +109,7 @@ a {
     justify-content: space-evenly;
     margin: 10px;
     padding: 0px;
-    box-shadow: 5px 5px var(--color-section-shadow);
+    box-shadow: 5px 5px var(--color-shadow);
 }
 
 .outer_box, .outer_box_rev {
@@ -131,7 +133,7 @@ a {
     padding: 10px 20px;
     margin: 10px;
     align-self: center;
-    box-shadow: 5px 5px var(--color-subsection-shadow);
+    box-shadow: 5px 5px var(--color-shadow);
 }
 
 .image_box {
@@ -142,7 +144,7 @@ a {
     height: fit-content;
     padding: 5px;
     align-self: center;
-    box-shadow: 5px 5px var(--color-subsection-shadow);
+    box-shadow: 5px 5px var(--color-shadow);
     margin: 10px;
 }
 
