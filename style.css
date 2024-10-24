@@ -52,6 +52,7 @@ a {
 .caption {
     text-align: center;
     font-style: italic;
+    margin: 5px;
 }
 
 .wrapper {
@@ -65,11 +66,11 @@ a {
     position: sticky;
     top: 0;
     background-color: var(--color-section);
-    width: 100%;
     height: fit-content;
     box-shadow: 5px 5px var(--color-shadow);
     border-radius: 10px;
     margin: 0px 0px 20px 0px;
+    padding: 5px;
 }
 
 .buttons {
@@ -80,7 +81,8 @@ a {
     margin: 10px;
 }
 
-.button, .button-sel, .ext-button {
+button, .button-sel, .ext-button {
+    border: 0px;
     background-color: var(--color-subsection);
     border-radius: 5px;
     box-shadow: 3px 3px var(--color-shadow);
@@ -99,9 +101,10 @@ a {
     box-shadow: 3px 3px var(--color-shadow);
 }
 
-.button:hover, .ext-button:hover {
+button:hover, .ext-button:hover {
     background-color: var(--color-highlight);
     box-shadow: 4px 4px var(--color-highlight-shadow);
+    cursor: grab;
 }
 
 .section_box {
