@@ -59,6 +59,11 @@ a {
     text-decoration: none;
 }
 
+.email {
+    color: blue;
+    text-decoration-line: underline;
+}
+
 .caption {
     text-align: center;
     font-style: italic;
