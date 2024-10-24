@@ -82,6 +82,7 @@ a {
 }
 
 button, .button-sel, .ext-button {
+    font-size: 16px;
     border: 0px;
     background-color: var(--color-subsection);
     border-radius: 5px;
