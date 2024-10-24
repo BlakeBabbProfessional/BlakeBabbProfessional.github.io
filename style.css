@@ -39,9 +39,19 @@ img {
     box-shadow: 3px 3px var(--color-shadow);
     max-width: min(100%, 600px);
     max-height: 400px;
-    margin: 5px;
+    margin: 0px 20px;
     align-self: center;
     flex: 0, 2;
+}
+
+.thumbnail {
+    max-width: min(100%, 300px);
+    max-height: 200px;
+    margin: 0px 10px;
+}
+
+.contained_img {
+    margin: 0px 0px 10px 0px;
 }
 
 a {
@@ -83,6 +93,7 @@ a {
 
 button, .button-sel, .ext-button {
     font-size: 16px;
+    text-align: center;
     border: 0px;
     background-color: var(--color-subsection);
     border-radius: 5px;
@@ -116,7 +127,7 @@ button:hover, .ext-button:hover {
     height: fit-content;
     justify-content: space-evenly;
     margin: 10px;
-    padding: 0px;
+    padding: 10px;
     box-shadow: 5px 5px var(--color-shadow);
 }
 
@@ -125,8 +136,8 @@ button:hover, .ext-button:hover {
     display: flex;
     flex-direction: row;
     height: fit-content;
-    justify-content: space-evenly;
-    margin: 20px;
+    justify-content: center;
+    margin: 10px;
 }
 
 .outer_box_rev {
@@ -135,13 +146,13 @@ button:hover, .ext-button:hover {
 
 .inner_box {
     background-color: var(--color-subsection);
+    box-shadow: 5px 5px var(--color-shadow);
+    align-self: center;
     border-radius: 10px;
     max-width: 600px;
     height: fit-content;
     padding: 10px 20px;
-    margin: 10px;
-    align-self: center;
-    box-shadow: 5px 5px var(--color-shadow);
+    margin: 0px 20px;
 }
 
 .image_box {
@@ -153,12 +164,20 @@ button:hover, .ext-button:hover {
     padding: 5px;
     align-self: center;
     box-shadow: 5px 5px var(--color-shadow);
-    margin: 10px;
+    margin: 0px 20px;
 }
 
 @media screen and (max-width: 1000px) {
     .outer_box, .inner_box, .outer_box_rev {
         width: auto;
         flex-direction: column;
+    }
+
+    .outer_box {
+        margin: 20px 10px;
+    }
+
+    img, .thumbnail, .image_box {
+        margin: 10px;
     }
 }
