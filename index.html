@@ -19,9 +19,14 @@ function switchPage(id) {
     window.scrollTo(0, 0);
 }
 
+function goToSection(pageId, sectionId) {
+    switchPage(pageId);
+    window.open(`#${sectionId}`, "_self");
+    window.scrollBy(0, -150);
+}
+
 </script>
 <body onload="switchPage(&quot;home&quot;)">
-
 <div class="header">
     <h1>Blake Babb</h1>
     <div class="buttons">
@@ -57,11 +62,12 @@ function switchPage(id) {
         <div class="outer_box">
         <div class="inner_box">
             <h2>Selected Projects</h2>
-            <p>More info in Projects and Education tabs.</p>
+            <p>Click on thumbnails for more info</p>
         </div>
         </div>
         <div class="outer_box_rev">
-        <img class="thumbnail" src="images/fugus revenge.gif">
+        <img class="thumbnail" src="images/fugus revenge.gif"
+            onclick="goToSection(&quot;projects&quot;, &quot;project_fugus_revenge&quot;)">
         <div class="inner_box">
             <h2>Fugu's Revenge</h2>
             <h3>2021</h3>
@@ -73,7 +79,8 @@ function switchPage(id) {
         </div>
         </div>
         <div class="outer_box">
-        <img class="thumbnail" src="images/monster parlor.gif">
+        <img class="thumbnail" src="images/monster parlor.gif"
+            onclick="goToSection(&quot;projects&quot;, &quot;project_monster_parlor&quot;)">
         <div class="inner_box">
             <h2>Monster Parlor</h2>
             <h3>2023</h3>
@@ -85,7 +92,8 @@ function switchPage(id) {
         </div>
         </div>
         <div class="outer_box_rev">
-        <img class="thumbnail" src="images/project.jpg">
+        <img class="thumbnail" src="images/project.jpg"
+            onclick="goToSection(&quot;education&quot;, &quot;project_capstone&quot;)">
         <div class="inner_box">
             <h2>Senior Capstone Project</h2>
             <h3>2024</h3>
@@ -137,7 +145,7 @@ function switchPage(id) {
         </div>
         </div>
     </div>
-    <div class="section_box"> <!-- Capstone project -->
+    <div class="section_box" id="project_capstone"> <!-- Capstone project -->
         <div class="outer_box">
         <div class="image_box">
             <img class="contained_img" src="images/project.jpg">
@@ -274,7 +282,7 @@ function switchPage(id) {
             </p>
         </div>
         </div>
-        <div class="outer_box">
+        <div class="outer_box" id="project_rogue_knight">
         <img src="images/rogue knight.gif">
         <div class="inner_box">
             <h2>Rogue Knight</h2>
@@ -298,7 +306,7 @@ function switchPage(id) {
             </p>
         </div>
         </div>
-        <div class="outer_box_rev">
+        <div class="outer_box_rev" id="project_monster_parlor">
         <img src="images/monster parlor.gif">
         <div class="inner_box">
             <h2>Monster Parlor</h2>
@@ -329,7 +337,7 @@ function switchPage(id) {
             </p>
         </div>
         </div>
-        <div class="outer_box">
+        <div class="outer_box" id="project_sticks_and_bones">
         <img src="images/sticks and bones.gif">
         <div class="inner_box">
             <h2>Sticks and Bones</h2>
@@ -355,7 +363,7 @@ function switchPage(id) {
             </p>
         </div>
         </div>
-        <div class="outer_box_rev">
+        <div class="outer_box_rev" id="project_fugus_revenge">
         <img src="images/fugus revenge.gif">
         <div class="inner_box">
             <h2>Fugu's Revenge</h2>
@@ -383,7 +391,7 @@ function switchPage(id) {
             </p>
         </div>
         </div>
-        <div class="outer_box">
+        <div class="outer_box" id="project_last_light">
         <img src="images/last light.gif">
         <div class="inner_box">
             <h2>Last Light</h2>

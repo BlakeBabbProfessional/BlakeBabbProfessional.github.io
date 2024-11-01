@@ -50,6 +50,11 @@ img {
     margin: 0px 10px;
 }
 
+.thumbnail:hover {
+    box-shadow: 4px 4px var(--color-highlight-shadow);
+    cursor: grab;
+}
+
 .contained_img {
     margin: 0px 0px 10px 0px;
 }
