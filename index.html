@@ -141,6 +141,11 @@ function goToSection(pageId, sectionId) {
                 BS in Computer Science. My focus was computer systems, which involved
                 learning about operating systems, computer networking & security,
                 compilers, and embedded systems.
+                <br><br>
+                During my time at OSU I learned a ton of both theoretical and
+                practical skills. I learned how to work on a large project as
+                part of a team, I learned organizational and time management skills,
+                and various developement processess and structures.
             </p>
         </div>
         </div>
@@ -178,12 +183,11 @@ function goToSection(pageId, sectionId) {
             </p>
         </div>
         </div>
-        <!-- TODO: describe device, devoleopment process, my role, with images -->
         <div class="outer_box_rev">
         <div class="image_box">
             <img class="contained_img" src="images/ui1.png">
             <p class="caption">Top of the user interface home page showing graphs
-            of acceleration and temperature over time.</p>
+            of acceleration and temperature over time</p>
         </div>
         <div class="inner_box">
             <h2>User Interface</h2>
@@ -201,6 +205,56 @@ function goToSection(pageId, sectionId) {
                 The user interface was designed with the eGui Rust framework, and
                 hosted as a Rust Rocket webserver from the Raspberry PI, which could
                 then be connected to over WiFi by a user's personal device.
+            </p>
+        </div>
+        </div>
+        <div class="outer_box">
+        <div class="image_box">
+            <img class="contained_img" src="images/kanban.png">
+            <p class="caption">A snapshot of the project kanban board</p>
+        </div>
+        <div class="inner_box">
+            <h2>Development Process</h2>
+            <p>
+                For this project we learned the practicalities of version
+                control and project & team organization. We had weekly meetings
+                both with our project TA to help keep us on track, and with our
+                project partner to discuss issues and requirements. We made some
+                mistakes along the way, like not establishing appropriate deadlines
+                and sometimes failing to report our progress. However, by the end
+                of the project we were working very well together and I am proud
+                of what we created.
+                <br><br>
+                The course taught us how to explicitely define requirements,
+                architecture, and our development process in documents and how
+                to write up weekly reports. This was unfamiliar to us at first
+                because we had never needed to explicitly define these things
+                as we had never worked on a project of this scale or duration
+                before, but it ended up being useful to clearly define our plans
+                and expectations beforehand.
+            </p>
+        </div>
+        </div>
+        <div class="outer_box_rev">
+        <div class="inner_box">
+            <h2>My Role</h2>
+            <p>
+                I was part of the UI development subteam, and my focus was on
+                data processing and display. I created data structures and
+                functions to automatically refresh and
+                asynchronously recieve read data from a SQLite database to be
+                displayed in graphs and tables using the Rust eGui framework.
+                I took great effort to ensure null safety and modularity, to
+                reduce unexpected behavior and allow for extensability if sensors
+                are added and removed.
+                <br><br>
+                In hindsight, Rust was the wrong choice for this aspect of the
+                project. I was not very familiar with Rust when I started on this
+                project to I had a lot to learn. Rust's support of asynchrony is
+                also very unfinished, which caused any part of this project that
+                involved it to be much more time consuming then they needed to be.
+                However, it was an interesting challenge and I learned a lot about
+                Rust and good coding practices.
             </p>
         </div>
         </div>
