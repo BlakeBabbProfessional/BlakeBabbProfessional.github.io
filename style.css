@@ -1,9 +1,9 @@
 :root {
     --color-text: black;
     --color-bg: ghostwhite;
-    --color-section: whitesmoke;
+    --color-section: rgba(245, 245, 245, 0.9);
     --color-shadow: rgba(0, 0, 0, 0.1);
-    --color-subsection: white;
+    --color-subsection: rgba(255, 255, 255, 0.8);
     --color-subsection-shadow: lightgrey;
     --color-button-darkshadow: silver;
     --color-highlight: #c1e5f6;
@@ -42,6 +42,19 @@ img {
     margin: 0px 20px;
     align-self: center;
     flex: 0, 2;
+}
+
+.bg_img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
 }
 
 .thumbnail {
@@ -89,7 +102,7 @@ a {
 .header {
     position: sticky;
     top: 0;
-    background-color: var(--color-section);
+    background-color: rgba(255, 255, 255, 0.95);
     height: fit-content;
     box-shadow: 5px 5px var(--color-shadow);
     border-radius: 10px;
