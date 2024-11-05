@@ -119,6 +119,7 @@ a {
 }
 
 button, .button-sel, .ext-button {
+    color: var(--color-text);
     font-size: 16px;
     text-align: center;
     border: 0px;
