@@ -54,7 +54,7 @@ function goToSection(pageId, sectionId) {
                 game developer.
                 <br><br>
                 I am currently based in Bend, Oregon but I am open to positions all
-                over the west coast. I'd love to explore more of whats out there!
+                over the West Coast. I'd love to explore more of whats out there!
             </p>
         </div>
         </div>
@@ -67,6 +67,19 @@ function goToSection(pageId, sectionId) {
         </div>
         </div>
         <div class="outer_box_rev">
+        <img class="thumbnail" src="images/project.jpg"
+            onclick="goToSection(&quot;education&quot;, &quot;project_capstone&quot;)">
+        <div class="inner_box">
+            <h2>Senior Capstone Project</h2>
+            <h3>2024</h3>
+            <p>
+                A prototype data logger designed for hobbyist aerospace and racing
+                enthusiasts. Developed over nine months by myself as part of a team
+                of three with the help of an industry professional project partner.
+            </p>
+        </div>
+        </div>
+        <div class="outer_box">
         <img class="thumbnail" src="images/fugus revenge.gif"
             onclick="goToSection(&quot;projects&quot;, &quot;project_fugus_revenge&quot;)">
         <div class="inner_box">
@@ -79,7 +92,7 @@ function goToSection(pageId, sectionId) {
             </p>
         </div>
         </div>
-        <div class="outer_box">
+        <div class="outer_box_rev">
         <img class="thumbnail" src="images/monster parlor.gif"
             onclick="goToSection(&quot;projects&quot;, &quot;project_monster_parlor&quot;)">
         <div class="inner_box">
@@ -89,19 +102,6 @@ function goToSection(pageId, sectionId) {
                 A small game about convincing monsters to let you give them twisted
                 "makeovers." Developed by me as part of a team of four in 72 hours for a
                 competition.
-            </p>
-        </div>
-        </div>
-        <div class="outer_box_rev">
-        <img class="thumbnail" src="images/project.jpg"
-            onclick="goToSection(&quot;education&quot;, &quot;project_capstone&quot;)">
-        <div class="inner_box">
-            <h2>Senior Capstone Project</h2>
-            <h3>2024</h3>
-            <p>
-                A prototype data logger designed for hobbyist aerospace and racing
-                enthusiasts. Developed over nine months by myself as part of a team
-                of three with the help of an industry professional project partner.
             </p>
         </div>
         </div>
@@ -141,13 +141,13 @@ function goToSection(pageId, sectionId) {
             <p>
                 I graduated from Oregon State University in June of 2024 with a
                 BS in Computer Science. My focus was computer systems, which involved
-                learning about operating systems, computer networking & security,
+                operating systems, computer networking & security,
                 compilers, and embedded systems.
                 <br><br>
-                During my time at OSU I learned a ton of both theoretical and
-                practical skills. I learned how to work on a large project as
-                part of a team, I learned organizational and time management skills,
-                and various developement processess and structures.
+                During my time at OSU I learned many practical skills on a range
+                of topics; I learned how to work on a large project as
+                part of a team, organizational and time management skills,
+                and various development processess and structures.
             </p>
         </div>
         </div>
@@ -157,7 +157,7 @@ function goToSection(pageId, sectionId) {
         <div class="image_box">
             <img class="contained_img" src="images/project.jpg">
             <p class="caption">My senior capstone project presentation at the
-                engineering expo</p>
+                College of Engineering expo</p>
         </div>
         <div class="inner_box">
             <h2>Senior Capstone Project<br>
@@ -169,10 +169,10 @@ function goToSection(pageId, sectionId) {
             </div>
             <p>
                 For my 2024 senior capstone project I worked as part of a team
-                on a project we called the "personal data acquisition prototype",
-                or "P-DAQ". The team consisted of myself, my classmates Aidan Agee,
-                Jake Goodwin, and Patrick Iacob, along with an industry professional
-                project partner Chris Patton.
+                on a project we called the Personal Data Acquisition Prototype,
+                or P-DAQ. The team consisted of myself, my classmates Aidan Agee,
+                Jake Goodwin, and Patrick Iacob, along with industry professional
+                Chris Patton, former SpaceX engineer.
                 Our project was a prototype data logger of the likes found in
                 the aerospace and automotive industries, but designed for the
                 budget and use cases of amatuer hobbyists.
@@ -180,8 +180,23 @@ function goToSection(pageId, sectionId) {
                 The project was developed from start to finished in Rust over nine
                 months with the direction of our project partner Chris Patton and
                 the oversight of a teacher's assistant. After completion, me and my
-                teammates presented our project at a public expo for college of
-                engineering captone projects.
+                teammates presented our project at a public expo for College of
+                Engineering capstone projects.
+            </p>
+        </div>
+        </div>
+        <div class="outer_box_rev">
+        <div class="inner_box">
+            <h2>My Role</h2>
+            <p>
+                I was part of the UI development subteam, and my focus was on
+                data processing and display. I created data structures and
+                functions to automatically refresh and
+                asynchronously recieve read data from a SQLite database to be
+                displayed in graphs and tables using the Rust eGui framework.
+                I took great effort to ensure null safety and modularity, to
+                reduce unexpected behavior and allow for extensability if sensors
+                are added and removed.
             </p>
         </div>
         </div>
@@ -199,14 +214,15 @@ function goToSection(pageId, sectionId) {
             </a>
             </div>
             <p>
-                We split our team into two subteams based on expertise to focus on
-                different aspects of the project: a hardware and firmware subteam,
-                and a software subteam. Myself and Aidan Agee were on the software
-                subteam, and we focused on the user interface and data storage.
-                <br><br>
                 The user interface was designed with the eGui Rust framework, and
                 hosted as a Rust Rocket webserver from the Raspberry PI, which could
-                then be connected to over WiFi by a user's personal device.
+                then be connected to over WiFi by a user's personal device. We
+                researched Rust web frameworks collaboratively, and ultimaly the
+                design of the webserver was left up to me.
+                <br><br>
+                The map, graphs, and tables in the UI all use asynchronous
+                functions to live-live update based on data from the device's
+                sensors stored in a SQLite database.
             </p>
         </div>
         </div>
@@ -221,9 +237,9 @@ function goToSection(pageId, sectionId) {
                 For this project we learned the practicalities of version
                 control and project & team organization. We had weekly meetings
                 both with our project TA to help keep us on track, and with our
-                project partner to discuss issues and requirements. We made some
-                mistakes along the way, like not establishing appropriate deadlines
-                and sometimes failing to report our progress. However, by the end
+                project partner to discuss issues and requirements.
+                Along the way we learned the importance of establishing appropriate deadlines
+                regularly reporting our progress, and by the end
                 of the project we were working very well together and I am proud
                 of what we created.
                 <br><br>
@@ -234,29 +250,6 @@ function goToSection(pageId, sectionId) {
                 as we had never worked on a project of this scale or duration
                 before, but it ended up being useful to clearly define our plans
                 and expectations beforehand.
-            </p>
-        </div>
-        </div>
-        <div class="outer_box_rev">
-        <div class="inner_box">
-            <h2>My Role</h2>
-            <p>
-                I was part of the UI development subteam, and my focus was on
-                data processing and display. I created data structures and
-                functions to automatically refresh and
-                asynchronously recieve read data from a SQLite database to be
-                displayed in graphs and tables using the Rust eGui framework.
-                I took great effort to ensure null safety and modularity, to
-                reduce unexpected behavior and allow for extensability if sensors
-                are added and removed.
-                <br><br>
-                In hindsight, Rust was the wrong choice for this aspect of the
-                project. I was not very familiar with Rust when I started on this
-                project to I had a lot to learn. Rust's support of asynchrony is
-                also very unfinished, which caused any part of this project that
-                involved it to be much more time consuming then they needed to be.
-                However, it was an interesting challenge and I learned a lot about
-                Rust and good coding practices.
             </p>
         </div>
         </div>
@@ -319,7 +312,7 @@ function goToSection(pageId, sectionId) {
             <p>
                 I am currently looking for a full-time job in software development.
                 I am based in Bend, Oregon but I am open to positions all over
-                the west coast. My skills and intrests lie in embedded systems, system
+                the West Coast. My skills and interests lie in embedded systems, system
                 administration, simulation, and game development.
                 <br><br>
                 I am also interested in interning at game development studios to
@@ -353,15 +346,16 @@ function goToSection(pageId, sectionId) {
             </div>
             <p>
                 In the summer of 2022 I worked as an electrical engineering
-                intern at AcraDyne, the engineering division of the portland-based
+                intern at AcraDyne, the engineering division of the Portland-based
                 company AIMCO. Initially my focus was on sitting in on engineering
                 meetings, shadowing junior and senior engineers, and fixing minor
                 bugs. But as I got more experienced I was tasked with fixing more
                 complicated bugs and even creating new features.
                 <br><br>
-                One of my projects was to update an old Python-based database
+                <!--One of my projects was to update an old Python-based database
                 explorer tool to be up-to-date with newer versions of the database
-                and to be more resiliant and user-friendly. My largest project was
+                and to be more resiliant and user-friendly.-->
+                My largest project was
                 to add a new feature for AcraDyne's precision fastening system:
                 a toggleable option to automatically turn tool indicator lights
                 off after a configurable period of time. I developed the feature
@@ -374,7 +368,7 @@ function goToSection(pageId, sectionId) {
                 I am very proud of the time I spent at AcraDyne, I worked closely
                 with several more experienced engineers, I learned a lot about
                 development processes, I didn't (permanantly) break anything, and
-                I real contributions to production code on tools used by big-name
+                I made real contributions to production code on tools used by
                 customers.
                 <br><br>
                 Please email me for references at
@@ -448,6 +442,8 @@ function goToSection(pageId, sectionId) {
             </a>
             </div>
             <p>
+                <em>Content warning: gore</em>
+                <br><br>
                 Developed in GameMaker over 72 hours for the Winter Melon Jam 2023
                 as part of a team of four.
                 Play as the owner of a sinister beauty parlor and try to convince
@@ -457,14 +453,7 @@ function goToSection(pageId, sectionId) {
                 chose because of its ease of use and ability to export to HTML5,
                 which is much more accessible and convenient for players. This
                 was also my first game I worked on as part of such a large team,
-                which went unexpectedly well; we worked very well together.
-                <br><br>
-                Monster Parlor was an unexpected hit on YouTube, with a lets play
-                by YouTuber ManlyBadassHero accumulating over one hundred thousand
-                views, inspiring several theory and analysis videos. This was
-                quite unexpected as we had done no marketing besides submitting
-                to the Winter Melon Jam and publishing on Itch.io, it is thanks
-                to ManlyBadassHero that our game was found.
+                which went very well.
             </p>
         </div>
         </div>
@@ -553,6 +542,7 @@ function goToSection(pageId, sectionId) {
         </div>
         </div>
         <div class="outer_box_rev">
+        <!-- TODO: GIF -->
         <img src="images/cca.jpg">
         <div class="inner_box">
             <h2>Crazy Critters Attack</h2>
@@ -619,21 +609,11 @@ function goToSection(pageId, sectionId) {
         <a class="ext-button" target="_blank" href="https://www.linkedin.com/in/blake-babb-043176236/">
             LinkedIn
         </a>
-        </div>
-        <div class="buttons">
         <a class="ext-button" target="_blank" href="https://github.com/BlakeBabbProfessional">
-            Professional GitHub
+            GitHub
         </a>
-        <a class="ext-button" target="_blank" href="https://github.com/leopard501">
-            Personal GitHub
-        </a>
-        </div>
-        <div class="buttons">
         <a class="ext-button" target="_blank" href="https://smallbuggames.itch.io/">
             Itch.io
-        </a>
-        <a class="ext-button" target="_blank" href="https://www.tumblr.com/blog/smallbuggames">
-            Tumblr
         </a>
         </div>
     </div>
