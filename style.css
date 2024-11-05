@@ -33,6 +33,10 @@ h4 {
     margin: 5px;
 }
 
+a {
+    align-self: center;
+}
+
 img {
     display: flex;
     border-radius: 10px;
@@ -193,6 +197,10 @@ button:hover, .ext-button:hover {
     align-self: center;
     box-shadow: 5px 5px var(--color-shadow);
     margin: 0px 20px;
+}
+
+#project_capstone, #project_monster_parlor, #project_fugus_revenge {
+    scroll-margin-top: 120px;
 }
 
 @media screen and (max-width: 1000px) {

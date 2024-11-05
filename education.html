@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="english">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Blake Babb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="header">
+    <h1>Blake Babb</h1>
+    <div class="buttons">
+        <a class="ext-button" href="index.html">Home</a>
+        <a class="ext-button" href="education.html">Education</a>
+        <a class="ext-button" href="work.html">Work</a>
+        <a class="ext-button" href="projects.html">Projects</a>
+        <a class="ext-button" href="contact.html">Contact</a>
+    </div>
+</div>
+
+<div class="wrapper" id="education">
+    <img class="bg_img" src="images/img_4_7_56.png">
+    <div class="section_box"> <!-- Intro -->
+        <div class="outer_box">
+        <!--
+        <div class="image_box">
+            <p class="caption">TODO: grad picture</p>
+        </div>
+        -->
+        <div class="inner_box">
+            <h2>Bachelor of Science - Computer Science Major<br>
+                <em>Oregon State University</em></h2>
+            <p>
+                I graduated from Oregon State University in June of 2024 with a
+                BS in Computer Science. My focus was computer systems, which involved
+                operating systems, computer networking & security,
+                compilers, and embedded systems.
+                <br><br>
+                During my time at OSU I learned many practical skills on a range
+                of topics; I learned how to work on a large project as
+                part of a team, organizational and time management skills,
+                and various development processess and structures.
+            </p>
+        </div>
+        </div>
+    </div>
+    <div class="section_box" id="project_capstone"> <!-- Capstone project -->
+        <div class="outer_box">
+        <div class="image_box">
+            <img class="contained_img" src="images/project.jpg">
+            <p class="caption">My senior capstone project presentation at the
+                College of Engineering expo</p>
+        </div>
+        <div class="inner_box">
+            <h2>Senior Capstone Project<br>
+                <em>P-DAQ</em></h2>
+            <div class="buttons">
+            <a class="ext-button" target="_blank" href="https://github.com/orgs/Personal-Data-Acquisition/repositories">
+                View on GitHub
+            </a>
+            </div>
+            <p>
+                For my 2024 senior capstone project I worked as part of a team
+                on a project we called the Personal Data Acquisition Prototype,
+                or P-DAQ. The team consisted of myself, my classmates Aidan Agee,
+                Jake Goodwin, and Patrick Iacob, along with industry professional
+                Chris Patton, former SpaceX engineer.
+                Our project was a prototype data logger of the likes found in
+                the aerospace and automotive industries, but designed for the
+                budget and use cases of amatuer hobbyists.
+                <br><br>
+                The project was developed from start to finished in Rust over nine
+                months with the direction of our project partner Chris Patton and
+                the oversight of a teacher's assistant. After completion, me and my
+                teammates presented our project at a public expo for College of
+                Engineering capstone projects.
+            </p>
+        </div>
+        </div>
+        <div class="outer_box_rev">
+        <div class="inner_box">
+            <h2>My Role</h2>
+            <p>
+                I was part of the UI development subteam, and my focus was on
+                data processing and display. I created data structures and
+                functions to automatically refresh and
+                asynchronously recieve read data from a SQLite database to be
+                displayed in graphs and tables using the Rust eGui framework.
+                I took great effort to ensure null safety and modularity, to
+                reduce unexpected behavior and allow for extensability if sensors
+                are added and removed.
+            </p>
+        </div>
+        </div>
+        <div class="outer_box_rev">
+        <div class="image_box">
+            <img class="contained_img" src="images/ui1.png">
+            <p class="caption">Top of the user interface home page showing graphs
+            of acceleration and temperature over time</p>
+        </div>
+        <div class="inner_box">
+            <h2>User Interface</h2>
+            <div class="buttons">
+            <a class="ext-button" target="_blank" href="https://github.com/Personal-Data-Acquisition/PDA_UI">
+                View on GitHub
+            </a>
+            </div>
+            <p>
+                The user interface was designed by myself and my teammate Aidan
+                Agee using the eGui Rust framework. It is
+                hosted as a Rust Rocket webserver from the Raspberry PI, which could
+                then be connected to over WiFi by a user's personal device.
+                The map, graphs, and tables in the UI all use asynchronous
+                functions to live-update based on data from the device's
+                sensors stored in a SQLite database.
+            </p>
+        </div>
+        </div>
+        <div class="outer_box">
+        <div class="image_box">
+            <img class="contained_img" src="images/kanban.png">
+            <p class="caption">A snapshot of the project kanban board</p>
+        </div>
+        <div class="inner_box">
+            <h2>Development Process</h2>
+            <p>
+                For this project we learned the practicalities of version
+                control and project & team organization. We had weekly meetings
+                both with our project TA to help keep us on track, and with our
+                project partner to discuss issues and requirements.
+                Along the way we learned the importance of establishing appropriate deadlines
+                regularly reporting our progress, and by the end
+                of the project we were working very well together and I am proud
+                of what we created.
+                <br><br>
+                The course taught us how to explicitely define requirements,
+                architecture, and our development process in documents and how
+                to write up weekly reports. This was unfamiliar to us at first
+                because we had never needed to explicitly define these things
+                as we had never worked on a project of this scale or duration
+                before, but it ended up being useful to clearly define our plans
+                and expectations beforehand.
+            </p>
+        </div>
+        </div>
+    </div>
+    <div class="section_box"> <!-- Other school projects -->
+        <div class="outer_box">
+        <div class="inner_box">
+            <h2>Other School Projects</h2>
+        </div>
+        </div>
+        <div class="outer_box">
+        <div class="image_box">
+            <img class="contained_img" src="images/exoplanets1.png">
+            <p class="caption">Exoplanet discoveries colored by discovery method,
+            plotted on a map of the galaxy</p>
+            <img class="contained_noshadow" src="images/exoplanets2.png">
+            <p class="caption">Exoplanet discoveries by discovery year,
+            orbital distance, and radius, with error bars</p>
+        </div>
+        <div class="inner_box">
+            <h2>Exoplanet Data Visualization</h2>
+            <p>
+                For my Data Visualization class I was tasked with creating several
+                data visualizations for any subject I found interesting. I chose
+                to study exoplanet research to answer several questions I had
+                about the field. Included are my favorite visualizations, made in
+                Kotlin.
+            </p>
+        </div>
+        </div>
+        <div class="outer_box_rev">
+        <div class="image_box">
+            <img class="contained_noshadow" src="images/networking1.png">
+            <p class="caption">Plot of project simulation results</p>
+        </div>
+        <div class="inner_box">
+            <h2>Active Queue Management Technique Experiments</h2>
+            <p>
+                Active queue management (AQM) is a general approach for managing
+                congestion in computer networks. As part of a group project
+                for my Computer Networking class
+                myself and two classmates researched, implemented, and tested
+                several different AQM techniques. We read a series of IEEE papers
+                where each technique was first introduced, then based on what
+                we read we implemented the techniques in the NS3 C++ network
+                simulator, ran experiments with them, and finally reported our
+                results.
+            </p>
+        </div>
+        </div>
+    </div>
+</div>
+
+</body>
