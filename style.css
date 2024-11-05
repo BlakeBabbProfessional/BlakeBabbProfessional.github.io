@@ -123,7 +123,7 @@ button, .button-sel, .ext-button {
     font-size: 16px;
     text-align: center;
     border: 0px;
-    background-color: var(--color-subsection);
+    background-color: var(--color-section);
     border-radius: 5px;
     box-shadow: 3px 3px var(--color-shadow);
     margin: 5px;
