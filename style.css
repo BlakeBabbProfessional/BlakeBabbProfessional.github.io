@@ -7,7 +7,7 @@
     --color-subsection-shadow: lightgrey;
     --color-button-darkshadow: silver;
     --color-highlight: #c1e5f6;
-    --color-highlight-shadow: skyblue;
+    --color-highlight-shadow: hsla(197, 100%, 73%, 0.7);
 }
 
 body {
@@ -65,11 +65,6 @@ img {
     max-width: min(100%, 300px);
     max-height: 200px;
     margin: 0px 10px;
-}
-
-.thumbnail:hover {
-    box-shadow: 4px 4px var(--color-highlight-shadow);
-    cursor: grab;
 }
 
 .contained_img, .contained_noshadow {
@@ -146,8 +141,7 @@ button, .button-sel, .ext-button {
 }
 
 button:hover, .ext-button:hover {
-    background-color: var(--color-highlight);
-    box-shadow: 4px 4px var(--color-highlight-shadow);
+    background-color: var(--color-highlight-shadow);
     cursor: grab;
 }
 
@@ -164,16 +158,20 @@ button:hover, .ext-button:hover {
 }
 
 .outer_box, .outer_box_rev {
-    /*background-color: blue;*/
     display: flex;
     flex-direction: row;
     height: fit-content;
     justify-content: center;
-    margin: 10px;
+    padding: 10px;
 }
 
 .outer_box_rev {
     flex-direction: row-reverse;
+}
+
+a.outer_box:hover, a.outer_box_rev:hover {
+    background-color: var(--color-highlight-shadow);
+    border-radius: 10px;
 }
 
 .inner_box {
@@ -185,6 +183,10 @@ button:hover, .ext-button:hover {
     height: fit-content;
     padding: 10px 20px;
     margin: 0px 20px;
+}
+
+a.inner_box:hover {
+    background-color: var(--color-highlight-shadow);
 }
 
 .image_box {
@@ -199,7 +201,8 @@ button:hover, .ext-button:hover {
     margin: 0px 20px;
 }
 
-#project_capstone, #project_monster_parlor, #project_fugus_revenge {
+#project_capstone, #project_monster_parlor, #project_fugus_revenge,
+#school_projects {
     scroll-margin-top: 120px;
 }
 
