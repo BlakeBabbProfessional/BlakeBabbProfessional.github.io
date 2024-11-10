@@ -6,13 +6,12 @@
     --color-subsection: rgba(255, 255, 255, 0.8);
     --color-subsection-shadow: lightgrey;
     --color-button-darkshadow: silver;
-    --color-highlight: #c1e5f6;
-    --color-highlight-shadow: hsla(197, 100%, 73%, 0.7);
+    --color-highlight: hsla(197, 100%, 73%, 0.7);
 }
 
 body {
     color: var(--color-text);
-    background-color: var(--color-bg);
+    background-color: transparent;
     font-family: sans-serif;
 }
 
@@ -117,7 +116,7 @@ a {
     margin: 10px;
 }
 
-button, .button-sel, .ext-button {
+button, .button-sel, .button {
     color: var(--color-text);
     font-size: 16px;
     text-align: center;
@@ -135,13 +134,13 @@ button, .button-sel, .ext-button {
     box-shadow: 2px 2px var(--color-button-darkshadow);
 }
 
-.ext-button {
+.button {
     background-color: var(--color-section);
     box-shadow: 3px 3px var(--color-shadow);
 }
 
-button:hover, .ext-button:hover {
-    background-color: var(--color-highlight-shadow);
+button:hover, .button:hover {
+    background-color: var(--color-highlight);
     cursor: grab;
 }
 
@@ -152,8 +151,11 @@ button:hover, .ext-button:hover {
     flex-direction: column;
     height: fit-content;
     justify-content: space-evenly;
+    align-self: center;
     margin: 10px;
     padding: 10px;
+    width: 95%;
+    max-width: 1300px;
     box-shadow: 5px 5px var(--color-shadow);
 }
 
@@ -170,7 +172,7 @@ button:hover, .ext-button:hover {
 }
 
 a.outer_box:hover, a.outer_box_rev:hover {
-    background-color: var(--color-highlight-shadow);
+    background-color: var(--color-highlight);
     border-radius: 10px;
 }
 
@@ -186,7 +188,7 @@ a.outer_box:hover, a.outer_box_rev:hover {
 }
 
 a.inner_box:hover {
-    background-color: var(--color-highlight-shadow);
+    background-color: var(--color-highlight);
 }
 
 .image_box {
