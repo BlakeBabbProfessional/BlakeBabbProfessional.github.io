@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="section_box" id="project_capstone"> <!-- Capstone project -->
-        <div class="outer_box">
+        <div class="outer_box_rev">
         <div class="image_box">
             <img class="contained_img" src="images/project.jpg">
             <p class="caption">My senior capstone project presentation at the
@@ -55,17 +55,21 @@
                 View on GitHub
             </a>
             </div>
-            <!-- TODO: what/who is it for? -->
             <p>
-                For my 2024 senior capstone project I worked as part of a team
-                on a project we called the Personal Data Acquisition Prototype,
-                or P-DAQ. The team consisted of myself, my classmates Aidan Agee,
+                My senior capstone project was a prototype data logger designed
+                for amatuer aerospace and automotive enthusiests called the
+                Personal Data Acquisition Prototype, or P-DAQ. It is a physical
+                device that can be attached to a cart, bike, model rocket, etc.
+                with sensors for measuring temperature, acceleration, and GPS position
+                to monitor performance. Our project targets an untapped market;
+                devices such as this exist on the market already, but they are
+                designed for industry professionals and are prohibitively expensive
+                for amateur hobbyists. Our device is designed to be modular and
+                east to setup and use.
+                <br><br>
+                I worked as part of a team consisting of myself, my classmates Aidan Agee,
                 Jake Goodwin, and Patrick Iacob, along with industry professional
                 Chris Patton, former SpaceX engineer.
-                Our project was a prototype data logger of the likes found in
-                the aerospace and automotive industries, but designed for the
-                budget and use cases of amatuer hobbyists.
-                <br><br>
                 The project was developed from start to finished in Rust over nine
                 months with the direction of our project partner Chris Patton and
                 the oversight of a teacher's assistant. After completion, me and my
@@ -74,7 +78,7 @@
             </p>
         </div>
         </div>
-        <div class="outer_box_rev">
+        <div class="outer_box">
         <div class="inner_box">
             <h2>My Role</h2>
             <p>
@@ -89,7 +93,7 @@
             </p>
         </div>
         </div>
-        <div class="outer_box_rev">
+        <div class="outer_box">
         <div class="image_box">
             <img class="contained_img" src="images/ui1.png">
             <p class="caption">Top of the user interface home page showing graphs
@@ -113,7 +117,7 @@
             </p>
         </div>
         </div>
-        <div class="outer_box">
+        <div class="outer_box_rev">
         <div class="image_box">
             <img class="contained_img" src="images/kanban.png">
             <p class="caption">A snapshot of the project kanban board</p>
@@ -148,23 +152,47 @@
         </div>
         </div>
         <div class="outer_box">
-        <div class="image_box">
-            <img class="contained_img" src="images/exoplanets1.png">
-            <p class="caption">Exoplanet discoveries colored by discovery method,
-            plotted on a map of the galaxy</p>
-            <img class="contained_noshadow" src="images/exoplanets2.png">
-            <p class="caption">Exoplanet discoveries by discovery year,
-            orbital distance, and radius, with error bars</p>
+        <div class="inner_box">
+            <code>
+                : echo test > out                                           <br>
+                : cat out                                                   <br>
+                test                                                        <br>
+                : status                                                    <br>
+                Exit status 0                                               <br>
+                : cat o                                                     <br>
+                cat: o: No such file or directory                           <br>
+                : status                                                    <br>
+                Exit status 1                                               <br>
+                : pwd                                                       <br>
+                /Users/blakebabb/Documents/cProjects/school/CS344Project_3  <br>
+                : cd                                                        <br>
+                : pwd                                                       <br>
+                /Users/blakebabb                                            <br>
+                : cd Documents                                              <br>
+                : pwd                                                       <br>
+                /Users/blakebabb/Documents                                  <br>
+                : echo $$                                                   <br>
+                20175                                                       <br>
+                : echo test &                                               <br>
+                Started up [20185]                                          <br>
+                :                                                           <br>
+                Process [20185] ended with status (0)                       <br>
+                : exit                                                      <br>
+            </code>
+            <p class="caption">
+                Example output from smallsh demonstrating its features
+            </p>
         </div>
         <div class="inner_box">
-            <h2>Exoplanet Data Visualization</h2>
-            <!-- TODO: why? results? -->
+            <h2>smallsh</h2>
+            <div class="buttons">
+            <a class="button" target="_blank" href="https://github.com/BlakeBabbProfessional/smallsh">
+                View on GitHub
+            </a>
+            </div>
             <p>
-                For my Data Visualization class I was tasked with creating several
-                data visualizations for any subject I found interesting. I chose
-                to study exoplanet research to answer several questions I had
-                about the field. Included are my favorite visualizations, made in
-                Kotlin.
+                A small shell made for my operating systems class.
+                <!-- TODO -->
             </p>
         </div>
         </div>
@@ -184,7 +212,7 @@
                 where each technique was first introduced, then based on what
                 we read we implemented the techniques in the NS3 C++ network
                 simulator, ran experiments with them, and finally reported our
-                results.
+                results, which matched what we found in the papers.
             </p>
         </div>
         </div>
