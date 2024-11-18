@@ -152,35 +152,10 @@
         </div>
         </div>
         <div class="outer_box">
-        <div class="inner_box">
-            <code>
-                : echo test > out                                           <br>
-                : cat out                                                   <br>
-                test                                                        <br>
-                : status                                                    <br>
-                Exit status 0                                               <br>
-                : cat o                                                     <br>
-                cat: o: No such file or directory                           <br>
-                : status                                                    <br>
-                Exit status 1                                               <br>
-                : pwd                                                       <br>
-                /Users/blakebabb/Documents/cProjects/school/CS344Project_3  <br>
-                : cd                                                        <br>
-                : pwd                                                       <br>
-                /Users/blakebabb                                            <br>
-                : cd Documents                                              <br>
-                : pwd                                                       <br>
-                /Users/blakebabb/Documents                                  <br>
-                : echo $$                                                   <br>
-                20175                                                       <br>
-                : echo test &                                               <br>
-                Started up [20185]                                          <br>
-                :                                                           <br>
-                Process [20185] ended with status (0)                       <br>
-                : exit                                                      <br>
-            </code>
+        <div class="image_box">
+            <img class="contained_img" src="images/smallsh.gif">
             <p class="caption">
-                Example output from smallsh demonstrating its features
+                GIF demonstrating smallsh's features (sped up)
             </p>
         </div>
         <div class="inner_box">
@@ -191,8 +166,15 @@
             </a>
             </div>
             <p>
-                A small shell made for my operating systems class.
-                <!-- TODO -->
+                A small shell made in C for my operating systems class as an exercise
+                to learn how forking and processes work. Reads user input and
+                parses it into command and arguments. Implements built-in
+                commands <code>cd</code>, <code>status</code> and <code>exit</code>,
+                all other commands are executed by forking the process and
+                replacing the child using the built in Unix command <code>exec</code>.
+                Also supports input and
+                output redirection, running processes in the background, and reading
+                the shell's pid.
             </p>
         </div>
         </div>
@@ -212,7 +194,7 @@
                 where each technique was first introduced, then based on what
                 we read we implemented the techniques in the NS3 C++ network
                 simulator, ran experiments with them, and finally reported our
-                results, which matched what we found in the papers.
+                results, which roughly matched what we found in our research.
             </p>
         </div>
         </div>

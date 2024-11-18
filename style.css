@@ -15,8 +15,8 @@ body {
     font-family: sans-serif;
 }
 
-code {
-    font-size: 10pt;
+p, code {
+    font-size: 12pt;
 }
 
 h1, h2 {
